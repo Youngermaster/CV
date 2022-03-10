@@ -52,14 +52,15 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-% \photo{./examples/profile.png}
+
+\photo[circle,noedge,left]{./images/profile_picture.png}
 \name{Juan Manuel}{Young Hoyos}
 \position{CYBERSECURITY ANALYST {\enskip\cdotp\enskip} PROBLEM SOLVER}
 
 % I don't want to add my address (I won't dox myself)
 % \address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
 
-\mobile{(+57) doxxed}
+\mobile{(+57) (doxxed)}
 \email{juanmanuel12.13jmyh81@gmail.com}
 \homepage{youngermaster.github.io}
 \github{Youngermaster}
@@ -89,15 +90,16 @@
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {\today}
-  {JUAN MANUEL YOUNG HOYOS | CURRICULUM VITAE}
-  {\thepage}
+{\today}
+{JUAN MANUEL YOUNG HOYOS | CURRICULUM VITAE}
+{\thepage}
 
 
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
+%\input{cv/summary.tex}
 \input{cv/education.tex}
 \input{cv/skills.tex}
 \input{cv/experience.tex}
