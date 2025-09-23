@@ -1,0 +1,54 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt, a4paper]{awesome-cv}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+% ---- Marca / color (elige uno) ----
+\definecolor{xboxgreen}{HTML}{107C10} % Xbox green
+\colorlet{awesome}{xboxgreen}         % o awesome-red / awesome-skyblue
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% ---- Contraste más oscuro ----
+\definecolor{darktext}{HTML}{1A1A1A}
+\colorlet{text}{darktext}
+\colorlet{graytext}{darktext}
+\colorlet{lighttext}{darktext}
+\renewcommand*{\lettertextstyle}{\fontsize{10pt}{1.45em}\bodyfontlight\upshape\color{darktext}}
+\renewcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{darktext}#1}}
+
+% --- Header ---
+\name{Juan Manuel}{Young Hoyos}
+\position{Frontend Software Engineer {\enskip\cdotp\enskip} React | TypeScript | Gaming UX}
+\address{Medellín, Colombia \,·\, Open to Costa Rica / Remote LATAM}
+\mobile{+57 314 415 4399}
+\email{juanmanuel12.13jmyh81@gmail.com}
+\homepage{jmyounghoyos.com}
+\github{Youngermaster}
+\linkedin{juan-manuel-young-hoyos}
+
+% --- Letter meta ---
+\recipient{Microsoft — Team Xbox}{Front End Software Engineer (Job \#1855291)}
+\letterdate{\today}
+\lettertitle{Application for Front End Software Engineer — Xbox}
+\letteropening{Dear Xbox Hiring Team,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Resume: Juan-Manuel-Young-Hoyos\_Xbox-Frontend\_MS-1855291.pdf}
+
+\begin{document}
+\makecvheader[R]
+\makelettertitle
+
+\begin{cvletter}
+
+I decided to become a software engineer the same way I learned to love games: \textbf{solving puzzles and building things}. As a kid I spent hours in \textbf{LEGO Star Wars}, tinkering with how levels fit together and wondering how the game worked under the hood. Years later, when I saw this opening at \textbf{Microsoft Xbox}, I applied immediately. I admire Microsoft as a technology leader and Xbox even more because I grew up hosting \textbf{Halo 3} LAN parties in my town, playing with a split screen \textbf{Call of Duty: Modern Warfare 3} with my friends and beating \textbf{Gears of War 2/3} on Insane with my brother. That feeling of shared magic is what I want to help players feel through great \textbf{UI/UX} here when in a few months I join the Xbox team.
+
+On the engineering side, I build \textbf{cross-platform} experiences with \textbf{React.js, React Native, and TypeScript}, designed for \textbf{responsive UX across device form factors} and \textbf{multi-input support} (gamepad, touch, mouse/keyboard). At \textbf{Publicis Global Delivery}, I shipped React Native features for the \textbf{Wegmans} app that lifted engagement by \textbf{30\%}, reduced critical bugs by \textbf{25\%} with \textbf{Jest}+\textbf{Dynatrace}, and cut release cycles by \textbf{50\%} via \textbf{GitHub Actions} CI/CD. I also led a \textbf{Next.js + TypeScript} redesign (Duluth Trading Company), improved performance in \textbf{Nuxt.js} apps, and built \textbf{GameConnect} UI/UX patterns with multi-input. I’m comfortable integrating \textbf{cloud service dependencies} on \textbf{Azure}, and I have practical exposure to \textbf{C\# / C++} from academic and side projects.
+
+I’m fluent in English and Spanish, care deeply about accessibility and inclusive design, and I’m available to work on-site in Colombia or for \textbf{remote LATAM} and \textbf{open to Costa Rica}. I’d be proud to contribute to Xbox Experiences \& Platforms and help the next generation feel the same magic I felt growing up.
+
+\end{cvletter}
+
+\makeletterclosing
+\end{document}
