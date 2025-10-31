@@ -1,0 +1,29 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt, a4paper]{awesome-cv}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=1.4cm, top=.5cm, right=1.4cm, bottom=1.5cm, footskip=.5cm}
+\fontdir[fonts/]
+\colorlet{awesome}{awesome-emerald}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\name{Ana Maria}{Hoyos Soto}
+\position{Early Childhood Assistant {\enskip\cdotp\enskip} Childcare Support | Team Collaboration}
+\address{Medellín, Colombia}
+\linkedin{ana-maria-hoyos-soto-0b8a1b385}
+\email{amhsoto.09@gmail.com}
+\mobile{+57 1234567890}
+
+\begin{document}
+\makecvheader
+\makecvfooter{\today}{ANA MARIA HOYOS SOTO | CURRICULUM VITAE}{\thepage}
+
+\input{sections/about.tex}
+\input{sections/skills.tex}
+\input{sections/experience.tex}
+\input{sections/education.tex}
+\input{sections/extracurricular.tex}
+
+\end{document}

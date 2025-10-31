@@ -1,0 +1,37 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt, a4paper]{awesome-cv}
+\usepackage[hidelinks]{hyperref}
+
+% Page layout
+\geometry{left=1.4cm, top=.5cm, right=1.4cm, bottom=1.5cm, footskip=.5cm}
+\fontdir[fonts/]
+
+% Color / style
+% \definecolor{amazonorange}{HTML}{FF9900}
+% \colorlet{awesome}{amazonorange}
+\colorlet{awesome}{awesome-orange} % Amazon-ish accent
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% --- Header ---
+\name{Juan Manuel}{Young Hoyos}
+\position{Software Development Engineer {\enskip\cdotp\enskip} React \,|\, TypeScript \,|\, Cloud}
+\address{Medellín, Colombia \,·\, Open to Relocate (Stockholm, SE)}
+\linkedin{juan-manuel-young-hoyos}
+\github{Youngermaster}
+\homepage{jmyounghoyos.com}
+\email{juanmanuel12.13jmyh81@gmail.com}
+\mobile{+57 1234567890}
+
+\begin{document}
+\makecvheader
+\makecvfooter{\today}{JUAN MANUEL YOUNG HOYOS | CURRICULUM VITAE}{\thepage}
+
+% \input{sections/summary.tex}
+\input{sections/skills.tex}
+\input{sections/experience.tex}
+\input{sections/extracurricular.tex}
+\input{sections/education.tex}
+
+\end{document}
