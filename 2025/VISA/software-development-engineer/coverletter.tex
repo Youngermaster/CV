@@ -1,0 +1,63 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt, a4paper]{awesome-cv}
+\usepackage[hidelinks]{hyperref}
+
+% Layout
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Visa/Tink style accent (sky blue)
+\colorlet{awesome}{awesome-skyblue}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Higher contrast body text
+\definecolor{darktext}{HTML}{1A1A1A}
+\colorlet{text}{darktext}
+\colorlet{graytext}{darktext}
+\colorlet{lighttext}{darktext}
+\renewcommand*{\lettertextstyle}{\fontsize{10pt}{1.45em}\bodyfontlight\upshape\color{darktext}}
+\renewcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{darktext}#1}}
+
+% --- Header info (you) ---
+\name{Juan Manuel}{Young Hoyos}
+\position{Graduate Software Engineer {\enskip\cdotp\enskip} React | TypeScript | Golang | Cloud}
+\address{Medellín, Colombia \,·\, Open to Relocate (Stockholm, Sweden) \,·\, Hybrid-ready}
+\mobile{+57 1234567890}
+\email{juanmanuel12.13jmyh81@gmail.com}
+\homepage{jmyounghoyos.com}
+\github{Youngermaster}
+\linkedin{juan-manuel-young-hoyos}
+
+% --- Letter meta (role) ---
+\recipient
+  {Hiring Team}
+  {Visa · Tink \\
+   Graduate Software Engineer \\
+   Stockholm, Sweden}
+\letterdate{\today}
+\lettertitle{Application — Graduate Software Engineer (Visa · Tink, Stockholm)}
+\letteropening{Dear Visa · Tink Hiring Team,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Resume — Juan Manuel Young Hoyos.pdf}
+
+\begin{document}
+\makecvheader[R]
+\makelettertitle
+
+\begin{cvletter}
+
+I am applying for the \textbf{Graduate Software Engineer} role at \textbf{Visa · Tink} in Stockholm. I will complete my B.S.\ in Computer Science and Engineering in \textbf{Dec.\ 2025} and am \textbf{available to start Summer 2026}. I want to help build reliable, secure financial infrastructure that real users depend on—exactly the kind of impact Tink has across open banking.
+
+I have shipped production software end-to-end across web and mobile: designing, implementing, testing, deploying, and monitoring real features used by thousands of users. At \textbf{Publicis Global Delivery}, I delivered React Native features (TypeScript, predictable state, async data flows), increased engagement by \textbf{30\%}, reduced critical bugs by \textbf{25\%} through testing and observability, and automated \textbf{CI/CD} with GitHub Actions to cut release cycles by \textbf{50\%}. On the web, I’ve built \textbf{React/Next.js} features for e-commerce and internal platforms with a focus on performance and fault tolerance across device form factors.
+
+On the backend, I’ve delivered APIs and services with \textbf{Golang} (\textbf{Fiber}, \textbf{GORM}) and \textbf{Postgres/MongoDB}, containerized with \textbf{Docker}, and deployed to \textbf{Azure}/AWS. I’m comfortable with \textbf{REST services}, \textbf{microservices}, \textbf{SQL \& NoSQL}, \textbf{Unix/Shell}, and collaborative tooling (GitHub; Bitbucket familiar). My foundation includes \textbf{data structures, algorithms, OOP}, code reviews, and documentation. While my recent backend work has been in \textbf{Go}, I’m fully prepared to pick up \textbf{Java} quickly if needed.
+
+Visa/Tink’s mission—secure, high-availability financial connectivity through APIs—matches how I like to work: own problems end-to-end, measure outcomes, and iterate with care for reliability and customer trust. I am fluent in English and Spanish, \textbf{open to relocate to Stockholm}, and ready for a hybrid schedule.
+
+Thank you for your time and consideration. I would be excited to learn from the team and contribute to Tink’s open banking platform and developer experience.
+
+\end{cvletter}
+
+\makeletterclosing
+\end{document}
