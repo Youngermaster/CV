@@ -1,0 +1,68 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt, a4paper]{awesome-cv}
+\usepackage[hidelinks]{hyperref}
+
+% Layout
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Amazon-style accent (orange-ish)
+% \definecolor{amazonorange}{HTML}{FF9900}
+% \colorlet{awesome}{amazonorange}
+\colorlet{awesome}{awesome-orange} % Amazon-ish accent
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Higher contrast body text
+\definecolor{darktext}{HTML}{1A1A1A}
+\colorlet{text}{darktext}
+\colorlet{graytext}{darktext}
+\colorlet{lighttext}{darktext}
+\renewcommand*{\lettertextstyle}{\fontsize{10pt}{1.45em}\bodyfontlight\upshape\color{darktext}}
+\renewcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{darktext}#1}}
+
+% --- Header info (you) ---
+\name{Juan Manuel}{Young Hoyos}
+\position{Software Development Engineer {\enskip\cdotp\enskip} React | TypeScript | Cloud}
+\address{Medellín, Colombia \,·\, Open to Relocate (Stockholm, Sweden)}
+\mobile{+57 1234567890}
+\email{juanmanuel12.13jmyh81@gmail.com}
+\homepage{jmyounghoyos.com}
+\github{Youngermaster}
+\linkedin{juan-manuel-young-hoyos}
+
+% --- Letter meta (role) ---
+\recipient
+  {Hiring Team}
+  {Amazon \\
+   Software Development Engineer -- 2026 \\
+   Job ID: 3119051 \\
+   Amazon Corporate Services Sweden AB}
+\letterdate{\today}
+\lettertitle{Application for Software Development Engineer -- 2026 (Job ID: 3119051)}
+\letteropening{Dear Amazon Hiring Team,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Resume -- Juan Manuel Young Hoyos.pdf}
+
+\begin{document}
+\makecvheader[R]
+\makelettertitle
+
+\begin{cvletter}
+
+I am applying for the \textbf{Software Development Engineer -- 2026} role (Job ID: 3119051) at Amazon because I want to build systems that directly impact customers at global scale. I am currently finishing my B.S. in Computer Science and Engineering (expected Dec.\ 2025, which fits the Oct.\ 2025 -- Sep.\ 2026 graduation window) and I have more than three years of hands-on experience shipping production software that real users rely on.
+
+In my current and recent roles, I have owned features end-to-end: designing, implementing, testing, deploying, and monitoring them in production. At \textbf{Publicis Global Delivery}, I delivered React Native features for a high-traffic retail app used across the U.S. I built TypeScript components with predictable state management and asynchronous data flows, integrated observability with Dynatrace, and wrote automated tests in Jest. Those improvements increased engagement by \textbf{30\%} and reduced critical bugs by \textbf{25\%}. I also automated \textbf{CI/CD pipelines with GitHub Actions}, cutting mobile release cycles by \textbf{50\%} and helping the team deliver safely and iteratively.
+
+Beyond mobile, I have shipped \textbf{React.js} and \textbf{Next.js} features for e-commerce and internal platforms, focusing on clean architecture, fault tolerance, and performance across device form factors. At \textbf{Grisú}, I built and deployed full-stack web apps (\textbf{React + NestJS}) to \textbf{Azure} using cloud services, secure deployment pipelines, and monitoring. I am comfortable working in distributed environments, debugging issues under pressure, and taking responsibility for production behavior.
+
+Technically, I code in \textbf{TypeScript, Python, C++, and C\#}, and I have a solid foundation in \textbf{data structures, algorithms, object-oriented design, and distributed client experiences}. I care about writing code that is maintainable, testable, and observable. I am used to working in an Agile environment, participating in code reviews, and documenting decisions so the team can move faster.
+
+Culturally, Amazon's focus on ownership and customer obsession matches how I already work. I like being accountable for real outcomes, not just tickets. I like seeing the impact of what I build. I am fluent in English and Spanish, and I am fully open to relocating to Stockholm to join Amazon Corporate Services Sweden AB.
+
+Thank you for your time and consideration. I would be excited to contribute to Amazon as an SDE, keep learning from experienced engineers, and help build reliable, scalable systems that make life better for millions of customers.
+
+\end{cvletter}
+
+\makeletterclosing
+\end{document}
