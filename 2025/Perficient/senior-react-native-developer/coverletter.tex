@@ -1,0 +1,55 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt,a4paper]{awesome-cv}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\definecolor{darktext}{HTML}{1A1A1A}
+\colorlet{text}{darktext}
+\renewcommand*{\lettertextstyle}{\fontsize{10pt}{1.45em}\bodyfontlight\upshape\color{darktext}}
+\renewcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{darktext}#1}}
+
+% --- Header info ---
+\name{Juan Manuel}{Young Hoyos}
+\position{Senior React Native Developer — TypeScript / Mobile / Cloud}
+\address{Medellín, Colombia · Open to Remote}
+\mobile{+57 1234567890}
+\email{juanmanuel12.13jmyh81@gmail.com}
+\homepage{jmyounghoyos.com}
+\github{Youngermaster}
+\linkedin{juan-manuel-young-hoyos}
+
+% --- Letter meta ---
+\recipient
+  {Hiring Team}
+  {Perficient}
+\letterdate{\today}
+\lettertitle{Application for Senior React Native Developer}
+\letteropening{Dear Perficient Hiring Team,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Resume — Juan Manuel Young Hoyos.pdf}
+
+\begin{document}
+\makecvheader[R]
+\makelettertitle
+
+\begin{cvletter}
+
+I am excited to apply for the \textbf{Senior React Native Developer} position at Perficient. With over \textbf{4 years of experience building and deploying cross-platform mobile applications}, I’m passionate about creating secure, high-performance, and scalable solutions that deliver real business impact.
+
+At \textbf{Publicis Global Delivery}, I’ve led React Native development for enterprise clients such as \textbf{Wegmans Food Markets} and \textbf{Duluth Trading Company}. My work has included modularizing codebases with \textbf{TypeScript}, improving performance via \textbf{Dynatrace}, and implementing automated \textbf{CI/CD pipelines} for iOS and Android through GitHub Actions — reducing release cycles by 50\%.  
+
+At my own company, \textbf{Grisú}, I’ve designed and deployed \textbf{3+ mobile applications} built with React Native and Flutter, integrated with REST and GraphQL APIs, and backed by secure cloud infrastructure. I’ve also led projects integrating AI-based services such as \textbf{AWS Rekognition} for facial authentication and event-driven features with Kafka and FastAPI.  
+
+Perficient’s emphasis on \textbf{technical leadership, scalability, and innovation} resonates deeply with my own values. I enjoy architecting robust mobile systems, mentoring teams through code quality and CI/CD, and ensuring the applications we deliver are performant, secure, and user-centric.  
+
+I’d be thrilled to contribute to Perficient’s mission of transforming global enterprises through technology and to grow alongside your talented engineering community.
+
+\end{cvletter}
+
+\makeletterclosing
+\end{document}
