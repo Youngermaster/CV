@@ -1,0 +1,55 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt,a4paper]{awesome-cv}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\definecolor{darktext}{HTML}{1A1A1A}
+\colorlet{text}{darktext}
+\renewcommand*{\lettertextstyle}{\fontsize{10pt}{1.45em}\bodyfontlight\upshape\color{darktext}}
+\renewcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{darktext}#1}}
+
+% --- Header info ---
+\name{Juan Manuel}{Young Hoyos}
+\position{Frontend Engineer — React / TypeScript / Nuxt.js}
+\address{Medellín, Colombia · Open to Remote / Hybrid (Japan)}
+\mobile{+57 1234567890}
+\email{juanmanuel12.13jmyh81@gmail.com}
+\homepage{jmyounghoyos.com}
+\github{Youngermaster}
+\linkedin{juan-manuel-young-hoyos}
+
+% --- Letter meta ---
+\recipient
+  {Hiring Team}
+  {PayPay Card Corporation}
+\letterdate{\today}
+\lettertitle{Application for Frontend Engineer — PayPay Card}
+\letteropening{Dear PayPay Card Hiring Team,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Resume — Juan Manuel Young Hoyos.pdf}
+
+\begin{document}
+\makecvheader[R]
+\makelettertitle
+
+\begin{cvletter}
+
+I am writing to apply for the \textbf{Frontend Engineer} position at PayPay Card. I build production web and mobile interfaces with \textbf{TypeScript}, \textbf{React/Next.js}, and more recently \textbf{Nuxt.js} in a mixed Vue environment, and I’m very interested in contributing to a high-traffic, payments-related mini app like yours.
+
+At \textbf{Publicis Global Delivery}, I have shipped customer-facing features using \textbf{Next.js + TypeScript} and also worked on an internal \textbf{Nuxt.js} web app, so I am comfortable with the Vue 3 / TS component model, API integration patterns, and working with design systems. I manage CI/CD with \textbf{GitHub Actions}, and I’ve used monitoring tools similar to \textbf{Sentry} and Dynatrace to keep UIs stable in production — which matches the stack you described (Nuxt 3, OpenAPI, GitHub, static deploys on AWS).
+
+Across my roles (PGD, Grisú, ArcDesign) I’ve had to collaborate with distributed teams, clarify requirements with product/design, and keep frontend codebases maintainable and performance-oriented. That’s why I’m especially interested in your plan to \textbf{re-assess and update the frontend architecture}: I enjoy refactoring toward scalable patterns, strict typing, and API-first integration.
+
+I work in English on a daily basis and I’m comfortable in multicultural teams. I am open to a hybrid/remote setup from LATAM and to aligning with Japan working practices.
+
+Thank you for your time and consideration. I would be happy to help PayPay Card deliver a fast, reliable, and well-structured frontend for its users.
+
+\end{cvletter}
+
+\makeletterclosing
+\end{document}
