@@ -3,6 +3,15 @@
 \documentclass[11pt, a4paper]{awesome-cv}
 \usepackage[hidelinks]{hyperref}
 
+% --- ATS / PDF metadata (populates the PDF Info dictionary so parsers like
+%     Ashby / Workday can auto-fill name, title and keywords from the file) ---
+\hypersetup{
+  pdftitle={Juan Manuel Young Hoyos — Senior Software Engineer},
+  pdfauthor={Juan Manuel Young Hoyos},
+  pdfsubject={Senior Software Engineer — Halter (Go-to-Market)},
+  pdfkeywords={React, React Native, TypeScript, JavaScript, Node.js, NestJS, Python, FastAPI, AI, LLM, full-stack, REST APIs, data pipelines, ETL, event-driven, observability, reliability, CI/CD, AWS, Azure, Docker, MongoDB, Redis, Kafka}
+}
+
 % Page layout
 \geometry{left=1.4cm, top=.5cm, right=1.4cm, bottom=1.5cm, footskip=.5cm}
 \fontdir[fonts/]
@@ -14,8 +23,8 @@
 
 % --- Header ---
 \name{Juan Manuel}{Young Hoyos}
-\position{Senior Web UI Developer - React | TypeScript | Cloud}
-\address{Medellín, Colombia · Open to Remote or relocate (if needed)}
+\position{Senior Software Engineer \textbar{} Full-Stack: React / React Native / TypeScript / Node.js / AI}
+\address{Medellín, Colombia · Willing to relocate to Auckland, NZ}
 \linkedin{juan-manuel-young-hoyos}
 \github{Youngermaster}
 \homepage{jmyounghoyos.com}
@@ -26,9 +35,9 @@
 \makecvheader
 \makecvfooter{\today}{JUAN MANUEL YOUNG HOYOS | CURRICULUM VITAE}{\thepage}
 
+\input{sections/summary.tex}
 \input{sections/skills.tex}
 \input{sections/experience.tex}
-\input{sections/extracurricular.tex}
 \input{sections/education.tex}
 
 \end{document}
