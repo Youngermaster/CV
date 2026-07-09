@@ -13,13 +13,17 @@
 }
 
 % Page layout
-\geometry{left=1.4cm, top=.5cm, right=1.4cm, bottom=1.5cm, footskip=.5cm}
+\geometry{left=1.25cm, top=.5cm, right=1.25cm, bottom=1.2cm, footskip=.5cm}
 \fontdir[fonts/]
 
 % Color / style
 \colorlet{awesome}{awesome-red}
 \setbool{acvSectionColorHighlight}{true}
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Tighten vertical spacing to keep the CV to a single page
+\renewcommand{\acvSectionTopSkip}{2.2mm}
+\renewcommand{\acvSectionContentTopSkip}{1.2mm}
 
 % --- Header ---
 \name{Juan Manuel}{Young Hoyos}
