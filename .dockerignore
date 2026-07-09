@@ -1,0 +1,15 @@
+# Keep the Docker build context small: the image only needs the Dockerfile.
+# The actual CV project is bind-mounted at run time, not copied in.
+.git
+.github
+.claude
+**/*.pdf
+**/*.aux
+**/*.log
+**/*.out
+**/*.fls
+**/*.fdb_latexmk
+**/*.synctex.gz
+**/*.toc
+**/.DS_Store
+scratchpad
