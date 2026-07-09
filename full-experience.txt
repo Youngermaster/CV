@@ -1,0 +1,206 @@
+Experience
+
+
+Okorum Technologies logo
+Technical Lead
+
+Okorum Technologies · Full-time
+
+Dec 2025 - Present · 8 mos
+
+Medellín, Antioquia, Colombia · Hybrid
+
+- Led the design and delivery of a national-scale health interoperability platform enabling Colombian healthcare providers to comply with Resolución 1888 de 2025 (Ministerio de Salud), which mandates the Resumen Digital de Atención en Salud (RDA) for electronic health record interoperability using HL7 FHIR R4.
+- Delivered a fully compliant RDA generation pipeline ahead of the national mandate deadline, by architecting a distributed backend as a Turborepo monorepo of NestJS microservices that coordinate the send, validate, convert and generate stages through message queues to produce standards-compliant HL7 FHIR R4 resources.
+- Sustained data integrity and regulatory compliance under an unreliable upstream government API, by engineering fault tolerance and resumability into the queue-based system so in-flight submissions recover gracefully when the national interoperability platform is slow or unavailable.
+- Accelerated repeated health-code validation, by implementing a Redis caching layer with a configurable refresh interval that avoids re-validating the same clinical codes on every request, keeping the pipeline fast under sustained multi-provider load alongside MongoDB persistence.
+- Shipped the platform's core business capabilities against a strict national compliance deadline, by leading a cross-functional engineering team through design, implementation and delivery.
+- Enabled reliable production operation on AWS, by building a CI/CD pipeline with GitHub Actions and standing up full-stack observability for logs, traces and metrics using Grafana, Loki and the LGTM stack.
+
+ NestJS, React Native and +7 skills
+
+Grisú logo
+Full Stack Developer
+
+Grisú · Self-employed
+
+Jul 2023 - Present · 3 yrs 1 mo
+
+Colombia · Remote
+
+• Led the auditing and development for ’EcoDrive’, leveraging React Native, Kafka, and Python Fast API, accelerating a 4‑month project timeline into mere weeks.
+• Crafted and launched a nostalgia‑driven React Native App, the Yak Bak 90’s toy simulator.
+• Provided architectural design consultancy for Industrias Falcon Colombia.
+• Conceptualized and rolled out a robust architecture for GameConnect.
+• Offered the services of UI Design to GameConnect, paving the way for seamless code implementation.
+• Engineered and revitalized the company’s landing page using React, leading to a surge in site traffic by 150%.
+• Actively driving the development of an engaging Hyper‑Casual game using React Native and Godot.
+
+ Python (Programming Language), React Native and +6 skills
+
+Publicis Global Delivery (PGD) logo
+Publicis Global Delivery (PGD)
+
+Full-time · 2 yrs
+
+Colombia · Remote
+
+Frontend Developer
+
+Jan 2025 - Nov 2025 · 11 mos
+
+- Worked in the redesign of Duluth Trading Company's e-commerce using Next.js + TypeScript, improving load performance and delivering responsive UX across desktop / tablet / mobile.
+- Shipped production features and stability fixes to an internal AI agent web app (Nuxt.js), improving workflow reliability for distributed teams.
+- Owned the full delivery loop: implementation, code review, performance tuning, and rollout with CI/CD using GitLab.
+
+Skills: React.js, Next.js, +3 skills
+
+React Native Developer
+
+Dec 2023 - Dec 2024 · 1 yr 1 mo
+
+- Engineered React Native components and integrated Zustand and Algolia, significantly improving user engagement and conversion rates for the e-commerce platform.
+- Developed comprehensive unit tests using Jest, ensuring robust application quality and reducing bug incidence.
+- Collaborated with QA to resolve tickets across core logic and UI, ensuring consistency across various devices using BrowserStack.
+- Utilized Dynatrace to monitor and optimize application performance, leading to enhanced user experience and system reliability.
+- I helped with the implementation of a streamlined CI/CD pipeline with GitHub Actions for Android APK generation, boosting deployment speed and overall development efficiency.
+
+Skills: React Native, Continuous Integration (CI), +2 skills
+
+Full Stack Developer
+
+Arc Design · Part-time
+
+Jul 2023 - Mar 2025 · 1 yr 9 mos
+
+Spain · Remote
+
+- Innovated an "advanced algorithm" using hashmaps and geohashes, significantly enhancing the application's performance and scalability.
+- Spearheaded architectural design, incorporating MQTT and conducting simulations in Python.
+- Led the development and deployment of static webs on AWS and Hostinger, employing React (for instance (https://arcdesign.io).
+- Integrated the "advanced algorithm" within a React Native environment for superior mobile performance.
+
+ Linux, Python (Programming Language) and +10 skills
+
+Design Systems Inno logo
+Design Systems Inno
+
+7 mos
+
+Medellín, Antioquia, Colombia
+
+Problem Solver
+
+Full-time
+
+Jan 2023 - Jun 2023 · 6 mos
+
+Hybrid
+
+- Designed and implemented a robust system architecture to support the development of internal APIs, integrating RabbitMQ for efficient management of intensive tasks and requests. This decoupled approach allowed asynchronous processing, where clients received a unique ID ticket to track task progress, with the backend handling intensive web scraping and HTML parsing operations, ultimately delivering responsive feedback to users.
+- Developed internal APIs to automate some internal processes using Go Fiber, Python Fast API, and MongoDB.
+- Created web scraping tools and custom HTML parsers in Python using Playwright and Beautiful Soup.
+- Paired with partners to fix critical bugs, ensuring on-time software deliveries and maintaining high quality.
+- Developed an automation script in Python for efficient contract signing.
+- Developed various administration panels using React (Redux + Saga).
+- Optimized project builds for some React web applications, reducing build sizes from 3.46 MB to around 886 KB and in some others even a little bit more.
+- I Assisted in improving the quality and speed of Dockerfiles for React and Angular web applications.
+- Enhanced logic and code quality in several React Native apps using TypeScript.
+
+Skills: Linux, Python (Programming Language), +7 skills
+
+Security Consultant
+
+Contract
+
+Dec 2022 · 1 mo
+
+Remote
+
+- Developed an external penetration testing engagement for a week and a half.
+- Documented the findings in the software and part of the infrastructure.
+- Documented some advices to improve the software and infrastructure quality
+
+Skills: Penetration Testing
+
+Aligo - Defensores Informáticos logo
+Red teamer
+
+Aligo - Defensores Informáticos · Full-time
+
+Aug 2022 - Oct 2022 · 3 mos
+
+Medellín, Antioquia, Colombia · On-site
+
+- Pentesting websites (Burp, custom scripts, manual exploits, Metasploit, etc.).
+- OSINT (Maltego, Sherlock, using fuzzers, etc.).
+- Pentesting tooling and custom scripts development (Nim, Python and Go).
+- Some templates for phishing campaigns developed.
+- Web security scanners used to speed up some engagements (OWASP ZAP, Nessus and Acunetix).
+
+ Python (Programming Language), Tenable Nessus and +6 skills
+
+Geta Club Play logo
+Geta Club Play
+
+Full-time · 1 yr 5 mos
+
+Cyber Security Analyst
+
+Sep 2021 - Jun 2022 · 10 mos
+
+- I used the DAST capabilities of OWASP ZAP to automatically review the company’s web applications.
+- I used SonarQube’s SAST capabilities to automatically review the company’s code.
+- I developed a ”economic” DevSecOps pipeline to avoid possible common vulnerabilities.
+- I worked closely with the AI team to sanitize requests made by users and avoid SQL injections.
+- Worked closely with IT to implement backup policies for employee files and repositories
+- I was given an external pentesting report with about 800 vulnerabilities in our projects, and I reduced that number to less than 390 (i.e. fixed about 50% of vulnerabilities) in a span of 4 months.
+- I simulated and implemented reverse engineering attacks on some project APKs in order to address, together with the development team, a possible way to mitigate the possibility of a Hacker obtaining useful or critical information about our core business.
+- Together with the IT team, I developed a Security Plan based on the ISO/27001 standard.
+- I am implementing hardening for some of our infrastructure processes.
+- I am working alongside the IA team to develop a part of the SOC (Security Operations Center) that can deliver value to our technical and non‑technical employees.
+
+Skills: DAST, Information Security Analysis, +8 skills
+
+Cyber Security Trainee
+
+Aug 2021 · 1 mo
+
+- I did a Cyber security planning for 4 months to 3 company's products.
+- I'm implementing a DevSecOps pipeline for 3 company's products.
+- I'm implementing SAST(Static application security testing) for various company's products.
+- I found vulnerabilities and I meet with the development team to fix them.
+
+Software Quality Assurance Tester
+
+Feb 2021 - Aug 2021 · 7 mos
+
+Medellín, Antioquia, Colombia
+
+- I captured 100+ bugs within the span of 4 months while conducting quality assurance testing on 7 company products thereby increasing the acceptance criteria of the top-rung corporate “chiefs”.
+- I document and record analyzed bugs for quality assurance every week.
+- I worked closely on 3 projects with development team to write test plans for quality assurance.
+- I performed more than 15% testing through automation and remaining testing manually using Selenium.
+- I led a 4-member team in providing quality assurance on 3 projects closely with development team.
+- I refactored and retrofitted legacy a C++ WebAssembly application, improving code quality by 45%.
+- I completed more than 20 "Desk Checks" to reduce on 25% the amount of Pull Request and therefore save the Tech Lead's time.
+- I helped to document 2 Unity 3D projects and also checked a documentation of an Angular/.Net Core project.
+- I made test plans of 2 Unity 3D Projects.
+- I planned tests for Unity 3D projects.
+- I did functional, online, usability and stress tests.
+
+Skills: Python (Programming Language), Selenium, +3 skills
+
+Personalized tutorials
+
+Self-employed · Self-employed
+
+Jan 2012 - May 2022 · 10 yrs 5 mos
+
+Personalized tutoring for adult students, child students, and young students, on topics such as mathematics, physics, programming, chemistry, and social studies, right now just focused on maths and programming.
+
+- I helped approximately 100+ clients with personalized tutorials on various academic topics.
+- I worked closely with more than 10 people with very low marks to get near-high marks and win the course.
+
+ C++, Teaching and +2 skills
+
