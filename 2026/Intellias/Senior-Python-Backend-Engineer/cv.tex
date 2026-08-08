@@ -1,0 +1,51 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt, a4paper]{awesome-cv}
+\usepackage[hidelinks]{hyperref}
+
+% --- ATS / PDF metadata (populates the PDF Info dictionary so parsers like
+%     Ashby / Workday can auto-fill name, title and keywords from the file) ---
+\hypersetup{
+  pdftitle={Juan Manuel Young Hoyos — Senior Full Stack Developer},
+  pdfauthor={Juan Manuel Young Hoyos},
+  pdfsubject={Senior Full Stack Developer — EPAM},
+  pdfkeywords={Full Stack, GoLang, Go, Python, FastAPI, React, TypeScript, JavaScript, Node.js, NestJS, system design, SDLC, microservices, REST APIs, cloud, AWS, Azure, Docker, Kubernetes, CI/CD, DevOps, SQL, NoSQL, MongoDB, Redis, automated testing, Agile, code review}
+}
+
+% Page layout
+\geometry{left=1.2cm, top=.4cm, right=1.2cm, bottom=.9cm, footskip=.4cm}
+\fontdir[fonts/]
+
+% Color / style
+
+% Emit ActualText so PDF text extraction yields ASCII hyphens (ATS keyword matching)
+\XeTeXgenerateactualtext=1
+
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Tighten vertical spacing to keep the CV to a single page
+\renewcommand{\acvSectionTopSkip}{1.5mm}
+\renewcommand{\acvSectionContentTopSkip}{0.9mm}
+
+% --- Header ---
+\name{Juan Manuel}{Young Hoyos}
+\position{Senior Full Stack Developer \textbar{} Go / Python / React \textbar{} Cloud \& System Design}
+\address{Medellín, Colombia · Open to Remote or Hybrid · English B2+ (professional working proficiency)}
+\linkedin{juan-manuel-young-hoyos}
+\github{Youngermaster}
+\homepage{jmyounghoyos.com}
+\email{juanmanuel12.13jmyh81@gmail.com}
+\mobile{+57 1234567890}
+
+\begin{document}
+\makecvheader
+\makecvfooter{\today}{JUAN MANUEL YOUNG HOYOS | CURRICULUM VITAE}{\thepage}
+
+\input{sections/summary.tex}
+\input{sections/skills.tex}
+\input{sections/experience.tex}
+\input{sections/education.tex}
+
+\end{document}
