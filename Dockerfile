@@ -12,6 +12,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # * texlive-latex-extra      -> tcolorbox, enumitem, unicode-math (required by awesome-cv.cls)
 # * texlive-fonts-recommended-> base font support
 # * latexmk                  -> automatic multi-pass compilation
+# * poppler-utils            -> pdfinfo / pdftotext to verify page count and ATS text extraction
 # * fonts-font-awesome, make -> icons + convenience
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
@@ -19,6 +20,7 @@ RUN apt-get update && \
         texlive-latex-extra \
         texlive-fonts-recommended \
         latexmk \
+        poppler-utils \
         fonts-font-awesome \
         make && \
     rm -rf /var/lib/apt/lists/*

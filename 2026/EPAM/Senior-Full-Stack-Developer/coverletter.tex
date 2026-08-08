@@ -1,0 +1,67 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt,a4paper]{awesome-cv}
+\usepackage[hidelinks]{hyperref}
+
+% --- ATS / PDF metadata ---
+\hypersetup{
+  pdftitle={Juan Manuel Young Hoyos — Cover Letter — Senior Full Stack Developer},
+  pdfauthor={Juan Manuel Young Hoyos},
+  pdfsubject={Cover Letter — Senior Full Stack Developer — EPAM},
+  pdfkeywords={Full Stack, GoLang, Go, Python, FastAPI, React, TypeScript, Node.js, system design, SDLC, microservices, cloud, AWS, Azure, Docker, CI/CD, SQL, NoSQL, Agile, EPAM}
+}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Emit ActualText so PDF text extraction yields ASCII hyphens (ATS keyword matching)
+\XeTeXgenerateactualtext=1
+
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\definecolor{darktext}{HTML}{1A1A1A}
+\colorlet{text}{darktext}
+\renewcommand*{\lettertextstyle}{\fontsize{10pt}{1.45em}\bodyfontlight\upshape\color{darktext}}
+\renewcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{darktext}#1}}
+
+% --- Header info ---
+\name{Juan Manuel}{Young Hoyos}
+\position{Senior Full Stack Developer — Go / Python / React — Cloud \& System Design}
+\address{Medellín, Colombia · Open to Remote or Hybrid · English B2+}
+\mobile{+57 1234567890}
+\email{juanmanuel12.13jmyh81@gmail.com}
+\homepage{jmyounghoyos.com}
+\github{Youngermaster}
+\linkedin{juan-manuel-young-hoyos}
+
+% --- Letter meta ---
+\recipient
+  {Hiring Team}
+  {EPAM Systems}
+\letterdate{\today}
+\lettertitle{Application for Senior Full Stack Developer}
+\letteropening{Dear EPAM Hiring Team,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Resume — Juan Manuel Young Hoyos.pdf}
+
+\begin{document}
+\makecvheader[R]
+\makelettertitle
+
+\begin{cvletter}
+
+I am excited to apply for the \textbf{Senior Full Stack Developer} position at EPAM. With \textbf{4+ years building scalable applications end-to-end} — \textbf{backend services in GoLang and Python} paired with \textbf{React} front ends — I'm drawn to EPAM's model of putting engineers on international projects with top brands alongside diverse, highly skilled global teams. That's exactly the environment where I do my best work.
+
+My backend experience maps directly to what you're looking for. At \textbf{Design Systems Inno} I designed and built internal \textbf{REST APIs in GoLang (Go Fiber) and Python (FastAPI)} on MongoDB, using \textbf{RabbitMQ} for a decoupled, asynchronous task architecture. More recently, as \textbf{Technical Lead at Okorum Technologies}, I drove the \textbf{system design} of a \textbf{microservices} platform for national health interoperability, delivered it ahead of a regulatory deadline, and made it resilient with caching and fault-tolerant, resumable queues.
+
+On the frontend I have deep \textbf{React} expertise: a \textbf{Next.js + TypeScript} e-commerce redesign for \textbf{Duluth Trading Company}, production \textbf{React Native} for \textbf{Wegmans} (+30\% in-app engagement), and React admin dashboards with Redux/Saga. Most recently I've been shipping features to \textbf{Unicorn AI}, an internal AI-agent platform that automates workflows for developers, designers, accountants and lawyers — spanning its \textbf{React} front end and \textbf{Python} retrieval backend, a good example of how I move across the stack rather than stopping at the boundary.
+
+I care about doing this properly across the \textbf{SDLC}: contributing to \textbf{architectural decisions}, ensuring quality through \textbf{code reviews and automated testing} (Jest, Selenium), documenting technical designs, and shipping on \textbf{cloud stacks (AWS, Azure)} with \textbf{Docker} and \textbf{CI/CD} pipelines. My background also includes DevSecOps work that cut known vulnerabilities by 50\%, so security and maintainability are habits rather than afterthoughts.
+
+Having collaborated daily with US and European teams as a remote engineer, I'm comfortable communicating technical trade-offs clearly in English with product managers, designers and fellow engineers. Thank you for your time and consideration — I would welcome the opportunity to bring my full stack depth and problem-solving to EPAM's engineering teams.
+
+\end{cvletter}
+
+\makeletterclosing
+\end{document}
