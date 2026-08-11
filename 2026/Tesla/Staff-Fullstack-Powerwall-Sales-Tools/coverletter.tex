@@ -1,0 +1,79 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt,a4paper]{awesome-cv}
+\usepackage[hidelinks]{hyperref}
+
+% --- ATS / PDF metadata ---
+\hypersetup{
+  pdftitle={Juan Manuel Young Hoyos — Cover Letter — Staff Fullstack Software Engineer},
+  pdfauthor={Juan Manuel Young Hoyos},
+  pdfsubject={Cover Letter — Staff Fullstack Software Engineer, Powerwall Sales Tools — Tesla},
+  pdfkeywords={React, TypeScript, GraphQL, full-stack, Rust, B2B2C, sales tools, quoting, data visualization, Docker, Kubernetes, Tesla, Powerwall, energy}
+}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Emit ActualText so PDF text extraction yields ASCII hyphens (ATS keyword matching)
+\XeTeXgenerateactualtext=1
+
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\definecolor{darktext}{HTML}{1A1A1A}
+\colorlet{text}{darktext}
+\renewcommand*{\lettertextstyle}{\fontsize{10pt}{1.45em}\bodyfontlight\upshape\color{darktext}}
+\renewcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{darktext}#1}}
+
+% --- Header info ---
+\name{Juan Manuel}{Young Hoyos}
+\position{Staff Full-Stack Software Engineer — React · TypeScript · GraphQL · Cloud}
+\address{Medellín, Colombia · Open to relocating to Palo Alto, CA · English B2+}
+\mobile{+57 1234567890}
+\email{juanmanuel12.13jmyh81@gmail.com}
+\homepage{jmyounghoyos.com}
+\github{Youngermaster}
+\linkedin{juan-manuel-young-hoyos}
+
+% --- Letter meta ---
+\recipient
+  {Energy Products Software — Hiring Team}
+  {Tesla}
+\letterdate{\today}
+\lettertitle{Application for Staff Fullstack Software Engineer, Powerwall Sales Tools}
+\letteropening{Dear Tesla Hiring Team,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Resume — Juan Manuel Young Hoyos.pdf}
+
+\begin{document}
+\makecvheader[R]
+\makelettertitle
+
+\begin{cvletter}
+
+I am applying for the \textbf{Staff Fullstack Software Engineer} role on the Powerwall Sales Tools team. A greenfield, high-impact platform that channel partners use at a homeowner's kitchen table is a rare combination: real product thinking, real data modelling, and a UI that has to work flawlessly on a phone in someone's house. I would like to help build it.
+
+I work across exactly your stack --- \textbf{React}, \textbf{TypeScript} and API contracts (\textbf{GraphQL}/REST) on the front, backend services I implement and scale myself on the back. As Technical Lead at \textbf{Okorum Technologies} I own a greenfield national-scale platform end to end, front end and services together in one \textbf{Turborepo} monorepo, delivered ahead of a hard regulatory deadline and kept fast under high-volume load with caching, resumable queues and full observability.
+
+The \textbf{B2B2C} shape of this role is familiar. At Publicis Global Delivery I ship features to \textbf{Unicorn AI}, an internal platform whose configurable agents are used by professionals to serve their own clients --- partner-facing tooling, not a consumer app. I also led an e-commerce redesign for \textbf{Duluth Trading Company} (Next.js + TypeScript) and drove \textbf{+30\% in-app engagement} on a \textbf{mobile-first} React Native app for \textbf{Wegmans}, so I understand building interfaces whose whole purpose is to convert.
+
+On \textbf{complex data models}: I have built event-driven systems over \textbf{Kafka}, designed a geohash-based geospatial algorithm, and run \textbf{MQTT} simulations of device telemetry in Python --- time-series and rate-style data that has to be modelled correctly before any interface can make it legible. I deploy with \textbf{Docker} and cover work with unit, integration and end-to-end tests.
+
+I should be straightforward about one thing: I have not written production \textbf{Rust}. I have a systems background (C++, including a WebAssembly codebase, and Go), I pick up languages quickly, and I would be glad to ramp on it --- but I would rather tell you that now than imply otherwise.
+
+Tesla's mission is a large part of why I am writing. Thank you for your consideration.
+
+\lettersection{Evidence of Excellence}
+
+\begin{itemize}[leftmargin=3ex, nosep, noitemsep]
+  \item \textbf{1st place, CivicaPay Hackathon 2022} --- won against \textbf{52+ teams from 16 universities} with a working mobile payments prototype.
+  \item \textbf{3rd place, Expo-Ingenierías} (EAFIT) for \textbf{SIMA}, an automated irrigation and monitoring system.
+  \item \textbf{Full national merit scholarship} ``Ser Pilo Paga'' --- awarded for top academic performance in Colombia.
+  \item \textbf{Shipped a national-scale platform ahead of a government mandate deadline} as Technical Lead, leading a cross-functional team.
+  \item \textbf{Measured impact:} +30\% in-app engagement (Wegmans), --50\% release-cycle time, --50\% known vulnerabilities in 4 months, bundle size 3.46 MB → 886 KB.
+\end{itemize}
+
+\end{cvletter}
+
+\makeletterclosing
+\end{document}

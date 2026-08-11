@@ -1,0 +1,69 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt,a4paper]{awesome-cv}
+\usepackage[hidelinks]{hyperref}
+
+% --- ATS / PDF metadata ---
+\hypersetup{
+  pdftitle={Juan Manuel Young Hoyos — Cover Letter — Software Engineer, Full-Stack},
+  pdfauthor={Juan Manuel Young Hoyos},
+  pdfsubject={Cover Letter — Software Engineer, Full-Stack — Monumental},
+  pdfkeywords={TypeScript, Rust, WebAssembly, robotics, telemetry, real-time, distributed systems, Linux, LLM agents, Claude Code, geometry, Monumental}
+}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Emit ActualText so PDF text extraction yields ASCII hyphens (ATS keyword matching)
+\XeTeXgenerateactualtext=1
+
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\definecolor{darktext}{HTML}{1A1A1A}
+\colorlet{text}{darktext}
+\renewcommand*{\lettertextstyle}{\fontsize{10pt}{1.45em}\bodyfontlight\upshape\color{darktext}}
+\renewcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{darktext}#1}}
+
+% --- Header info ---
+\name{Juan Manuel}{Young Hoyos}
+\position{Software Engineer, Full-Stack — TypeScript · Systems, Real-Time \& WebAssembly}
+\address{Medellín, Colombia · Open to relocating to Amsterdam (on-site) · English B2+}
+\mobile{+57 1234567890}
+\email{juanmanuel12.13jmyh81@gmail.com}
+\homepage{jmyounghoyos.com}
+\github{Youngermaster}
+\linkedin{juan-manuel-young-hoyos}
+
+% --- Letter meta ---
+\recipient
+  {Software Engineering — Hiring Team}
+  {Monumental}
+\letterdate{\today}
+\lettertitle{Application for Software Engineer, Full-Stack}
+\letteropening{Dear Monumental Team,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Resume — Juan Manuel Young Hoyos.pdf}
+
+\begin{document}
+\makecvheader[R]
+\makelettertitle
+
+\begin{cvletter}
+
+I am applying for the \textbf{Full-Stack Software Engineer} role at Monumental. Software that touches the physical world is the reason I am writing: I would rather debug why a robot behaves differently than its simulation than ship another SaaS screen. Building in Amsterdam, on-site, around a robot testing floor, is part of the appeal rather than a cost.
+
+Your stack is \textbf{TypeScript and Rust, much of it compiled to WebAssembly} so the UI shares control code with the robots. The closest thing I have done is refactoring and retrofitting a legacy \textbf{C++ WebAssembly} application, improving its code quality by \textbf{45\%} --- so I have worked inside a WASM codebase and understand what that shared-stack boundary costs and buys. I should say plainly that I have not written production \textbf{Rust}; I have shipped C++, Go, Python and TypeScript, I pick up languages quickly, and your posting says Rust is valuable but not required, so I will be straight with you rather than imply otherwise.
+
+The problems you describe are ones I have versions of. \textbf{Telemetry so you can see what every unit is doing:} as Technical Lead at Okorum I stood up logs, traces and metrics across a distributed system and engineered \textbf{fault tolerance and resumability} into its queues, so in-flight work survives an unreliable external dependency that goes down without warning --- the software equivalent of a flaky link on a site. \textbf{Choosing the right abstractions:} I picked the core architecture for that platform and shipped it ahead of a hard government deadline. \textbf{Real-time and protocols:} I drove an \textbf{MQTT} architecture at ArcDesign with device \textbf{simulations in Python} before integrating the logic for near real-time behaviour, and I have built event-driven systems on Kafka and RabbitMQ.
+
+On \textbf{LLM agents}: I run several in parallel --- \textbf{Claude Code} for building, a separate pass for code review, and others for investigation and documentation --- and I am usually the person colleagues ask when an agent does something inexplicable. I treat their output as a draft to be validated, not a result.
+
+On foundations: I hold a B.S. in Computer Science and Engineering, I built a geohash-and-hashmap spatial algorithm for scalable geolocation, and I have done 3D engine work in Godot and Unity, so transforms and linear algebra are familiar ground. I am comfortable on Linux, SSH-ing into a machine to work out why something is not behaving.
+
+Finally, ownership: I have repeatedly been the person who drives a project start-to-finish without someone managing it, in chaotic conditions and against deadlines that did not move. Thank you for your consideration.
+
+\end{cvletter}
+
+\makeletterclosing
+\end{document}

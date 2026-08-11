@@ -1,0 +1,67 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt,a4paper]{awesome-cv}
+\usepackage[hidelinks]{hyperref}
+
+% --- ATS / PDF metadata ---
+\hypersetup{
+  pdftitle={Juan Manuel Young Hoyos — Cover Letter — Software Engineer, Frontend},
+  pdfauthor={Juan Manuel Young Hoyos},
+  pdfsubject={Cover Letter — Software Engineer, Frontend — Helsing},
+  pdfkeywords={React, TypeScript, component library, frontend standards, Vite, REST, GraphQL, Rust, performance, Helsing}
+}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Emit ActualText so PDF text extraction yields ASCII hyphens (ATS keyword matching)
+\XeTeXgenerateactualtext=1
+
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\definecolor{darktext}{HTML}{1A1A1A}
+\colorlet{text}{darktext}
+\renewcommand*{\lettertextstyle}{\fontsize{10pt}{1.45em}\bodyfontlight\upshape\color{darktext}}
+\renewcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{darktext}#1}}
+
+% --- Header info ---
+\name{Juan Manuel}{Young Hoyos}
+\position{Software Engineer, Frontend — React \& TypeScript · Component Libraries \& Standards}
+\address{Medellín, Colombia · Open to relocating to Munich / Berlin / London · English B2+}
+\mobile{+57 1234567890}
+\email{juanmanuel12.13jmyh81@gmail.com}
+\homepage{jmyounghoyos.com}
+\github{Youngermaster}
+\linkedin{juan-manuel-young-hoyos}
+
+% --- Letter meta ---
+\recipient
+  {Frontend Engineering — Hiring Team}
+  {Helsing}
+\letterdate{\today}
+\lettertitle{Application for Software Engineer — Frontend}
+\letteropening{Dear Helsing Hiring Team,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Resume — Juan Manuel Young Hoyos.pdf}
+
+\begin{document}
+\makecvheader[R]
+\makelettertitle
+
+\begin{cvletter}
+
+I am applying for the \textbf{Frontend Software Engineer} role at Helsing. What stands out is that you have relatively few frontend engineers, which means the work is foundational: shaping the \textbf{React component library}, the standards and the tooling that everyone else builds on. That kind of leverage is what I look for, and the seriousness of the domain --- including the ethical debate you invite --- is a reason I want to work on it rather than a reservation.
+
+I write \textbf{React} and \textbf{TypeScript} for live production software. As Technical Lead at \textbf{Okorum Technologies} I own the front end and the services behind it for a national-scale platform delivered ahead of a hard deadline, structured as a \textbf{Turborepo} monorepo where shared types and one CI pipeline keep contracts honest across front ends --- the same instinct that makes shared component foundations worth building.
+
+I have measurable results on the things you care about. I cut a React/Angular bundle from \textbf{3.46 MB to ~886 KB}, built \textbf{reusable TypeScript components} that lifted Wegmans in-app engagement \textbf{30\%}, cut critical bugs \textbf{25\%} with a Jest testing strategy and Dynatrace monitoring, and led an e-commerce redesign for Duluth Trading Company in \textbf{Next.js} with responsive, accessible UX. I have also raised TypeScript quality across other teams' React Native codebases --- unglamorous work that makes everyone faster.
+
+I am comfortable going into \textbf{unfamiliar backends} to unblock myself: I have shipped Go, Python, Node.js and C++ (including a WebAssembly codebase), and I work with \textbf{REST and GraphQL} contracts daily. I have not written production \textbf{Rust} --- I would like to learn it, and your posting says that is fine, so I will simply be straightforward about it.
+
+The day-to-day you describe suits me: reviewing colleagues' work before advancing my own, writing RFCs, collaborating asynchronously, and mentoring. I have led engineering and QA teams and taught for over a decade. Thank you for your consideration.
+
+\end{cvletter}
+
+\makeletterclosing
+\end{document}

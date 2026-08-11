@@ -1,0 +1,67 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt,a4paper]{awesome-cv}
+\usepackage[hidelinks]{hyperref}
+
+% --- ATS / PDF metadata ---
+\hypersetup{
+  pdftitle={Juan Manuel Young Hoyos — Cover Letter — Principal Software Engineer},
+  pdfauthor={Juan Manuel Young Hoyos},
+  pdfsubject={Cover Letter — Principal Software Engineer — Autodesk},
+  pdfkeywords={TypeScript, serverless, AWS, large-scale systems, platform, design automation, AI-enabled workflows, architecture, technical leadership, Autodesk, Forma}
+}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Emit ActualText so PDF text extraction yields ASCII hyphens (ATS keyword matching)
+\XeTeXgenerateactualtext=1
+
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\definecolor{darktext}{HTML}{1A1A1A}
+\colorlet{text}{darktext}
+\renewcommand*{\lettertextstyle}{\fontsize{10pt}{1.45em}\bodyfontlight\upshape\color{darktext}}
+\renewcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{darktext}#1}}
+
+% --- Header info ---
+\name{Juan Manuel}{Young Hoyos}
+\position{Principal Software Engineer — TypeScript · Cloud \& Large-Scale Systems · Design Automation}
+\address{Medellín, Colombia · Remote · Open to relocating to the Netherlands}
+\mobile{+57 1234567890}
+\email{juanmanuel12.13jmyh81@gmail.com}
+\homepage{jmyounghoyos.com}
+\github{Youngermaster}
+\linkedin{juan-manuel-young-hoyos}
+
+% --- Letter meta ---
+\recipient
+  {Forma Design — Hiring Team}
+  {Autodesk}
+\letterdate{\today}
+\lettertitle{Application for Principal Software Engineer — Forma Design}
+\letteropening{Dear Autodesk Hiring Team,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Resume — Juan Manuel Young Hoyos.pdf}
+
+\begin{document}
+\makecvheader[R]
+\makelettertitle
+
+\begin{cvletter}
+
+I am applying for the \textbf{Principal Software Engineer} role on the Forma Design team. The part of your description that made me want to write is turning design automations into \textbf{reusable, configurable building blocks} that users can apply without writing code or understanding the implementation. That is exactly the problem I am working on today, in a different domain.
+
+As \textbf{Technical Lead at Okorum Technologies} I set the technical direction for a national-scale interoperability platform and delivered it ahead of a hard government deadline. I architected it as a \textbf{Turborepo monorepo of NestJS microservices} coordinating staged processing over \textbf{message queues}, engineered fault tolerance and resumability so work survives an unreliable upstream system, and stood up \textbf{CI/CD on AWS} with full observability. I stayed hands-on in the code the whole way through --- which is the part of this role I care most about keeping.
+
+I have also driven architecture \textbf{beyond a single team}: as consulting architect through Grisú I defined system architecture for client organisations that other engineers then built against, and at Design Systems Inno I built the shared internal API platform --- an asynchronous, queue-backed design where clients track long-running jobs by ticket rather than blocking --- used across several product teams.
+
+On \textbf{AI-enabled workflows}, I ship features to \textbf{Unicorn AI}, an internal AI-agent platform whose configurable per-role agents automate the work of developers, designers, accountants and lawyers. It is the same shape as your automations: reusable building blocks, adapted per context, with the complexity hidden from the user. I also use \textbf{Claude Code} and LLMs daily in my own engineering, while reviewing and validating everything they produce.
+
+I lead through influence and example rather than authority --- mentoring is something I have done deliberately for over a decade, from tutoring 100+ students to leading engineering and QA teams. I would welcome the chance to bring that, and a genuine interest in sustainable design tooling, to Forma Design. Thank you for your consideration.
+
+\end{cvletter}
+
+\makeletterclosing
+\end{document}

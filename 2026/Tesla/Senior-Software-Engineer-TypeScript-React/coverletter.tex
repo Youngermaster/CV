@@ -1,0 +1,77 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt,a4paper]{awesome-cv}
+\usepackage[hidelinks]{hyperref}
+
+% --- ATS / PDF metadata ---
+\hypersetup{
+  pdftitle={Juan Manuel Young Hoyos — Cover Letter — Senior Software Engineer (TypeScript, React)},
+  pdfauthor={Juan Manuel Young Hoyos},
+  pdfsubject={Cover Letter — Senior Software Engineer (TypeScript, React) — Tesla Gigafactory Berlin},
+  pdfkeywords={TypeScript, React, frontend architecture, accessibility, performance, Playwright, Jest, Vite, Webpack, Golang, REST, GraphQL, Kubernetes, Tesla, Gigafactory Berlin}
+}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Emit ActualText so PDF text extraction yields ASCII hyphens (ATS keyword matching)
+\XeTeXgenerateactualtext=1
+
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\definecolor{darktext}{HTML}{1A1A1A}
+\colorlet{text}{darktext}
+\renewcommand*{\lettertextstyle}{\fontsize{10pt}{1.45em}\bodyfontlight\upshape\color{darktext}}
+\renewcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{darktext}#1}}
+
+% --- Header info ---
+\name{Juan Manuel}{Young Hoyos}
+\position{Senior Software Engineer — TypeScript \& React · Frontend Architecture · Golang}
+\address{Medellín, Colombia · Open to relocating to Grünheide / Berlin · English B2+}
+\mobile{+57 1234567890}
+\email{juanmanuel12.13jmyh81@gmail.com}
+\homepage{jmyounghoyos.com}
+\github{Youngermaster}
+\linkedin{juan-manuel-young-hoyos}
+
+% --- Letter meta ---
+\recipient
+  {Factory Software Engineering — Hiring Team}
+  {Tesla — Gigafactory Berlin-Brandenburg}
+\letterdate{\today}
+\lettertitle{Application for Senior Software Engineer (TypeScript, React)}
+\letteropening{Dear Tesla Hiring Team,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Resume — Juan Manuel Young Hoyos.pdf}
+
+\begin{document}
+\makecvheader[R]
+\makelettertitle
+
+\begin{cvletter}
+
+I am applying for the \textbf{Senior Software Engineer (TypeScript, React)} role with the Factory Software Engineering team at Gigafactory Berlin-Brandenburg. Building software that streamlines factory operations --- where the users are on the line and the cost of a slow or confusing interface is measured in real output --- is far more interesting to me than another consumer web app.
+
+I own \textbf{frontend architecture} on complex, enterprise-scale applications: component design, \textbf{state management} and data-fetching patterns. As Technical Lead at \textbf{Okorum Technologies} I own both halves of a national-scale platform --- the \textbf{React + TypeScript} front end and the TypeScript services behind it --- in a single \textbf{Turborepo} monorepo with shared types, which is how I prefer to keep frontend and backend contracts honest. We shipped ahead of a hard government deadline.
+
+The fundamentals you list are ones I have measurably practised. I cut a React/Angular bundle from \textbf{3.46 MB to ~886 KB} through build and \textbf{browser performance} optimisation; I led Duluth Trading Company's e-commerce redesign in \textbf{Next.js + TypeScript} with responsive, accessible UX across desktop, tablet and mobile; and I drove a testing strategy at Wegmans (\textbf{Jest}, BrowserStack, \textbf{Dynatrace} monitoring) that cut critical bugs \textbf{25\%} while \textbf{CI/CD} automation cut release time \textbf{50\%}. I have used \textbf{Playwright} for browser automation and \textbf{Selenium} for test automation earlier in my career.
+
+I am also genuinely comfortable crossing into the backend: I have written \textbf{Golang} services (Go Fiber) and Python APIs, worked with \textbf{REST and GraphQL} contracts, and deploy with \textbf{Docker}. When a feature needs a backend change to land, I would rather write it than wait for it.
+
+I am ready to relocate to Grünheide, and Tesla's speed and efficiency are the reasons I want to be there rather than a deterrent. Thank you for your consideration.
+
+\lettersection{Evidence of Excellence}
+
+\begin{itemize}[leftmargin=3ex, nosep, noitemsep]
+  \item \textbf{1st place, CivicaPay Hackathon 2022} --- won against \textbf{52+ teams from 16 universities} with a working mobile payments prototype.
+  \item \textbf{3rd place, Expo-Ingenierías} (EAFIT) for \textbf{SIMA}, an automated irrigation and monitoring system.
+  \item \textbf{Full national merit scholarship} ``Ser Pilo Paga'' --- awarded for top academic performance in Colombia.
+  \item \textbf{Shipped a national-scale platform ahead of a government mandate deadline} as Technical Lead, leading a cross-functional team.
+  \item \textbf{Measured impact:} +30\% in-app engagement (Wegmans), --50\% release-cycle time, --50\% known vulnerabilities in 4 months, bundle size 3.46 MB → 886 KB.
+\end{itemize}
+
+\end{cvletter}
+
+\makeletterclosing
+\end{document}

@@ -1,0 +1,51 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt, a4paper]{awesome-cv}
+\usepackage[hidelinks]{hyperref}
+
+% --- ATS / PDF metadata (populates the PDF Info dictionary so parsers like
+%     Ashby / Workday can auto-fill name, title and keywords from the file) ---
+\hypersetup{
+  pdftitle={Juan Manuel Young Hoyos — Senior / Principal Software Developer},
+  pdfauthor={Juan Manuel Young Hoyos},
+  pdfsubject={Senior / Principal Software Developer — Autodesk (AEC Data Validation)},
+  pdfkeywords={TypeScript, NestJS, React, Next.js, Node.js, cloud services, AWS, Lambda, API Gateway, SQS, SNS, DynamoDB, serverless, microservices, GitOps, infrastructure as code, distributed systems, RESTful APIs, event-driven architecture, caching, ORM, SQL, NoSQL, MongoDB, Redis, CI/CD, GitHub Actions, Jenkins, authentication, authorization, OAuth, JWT, observability, performance optimization, unit and integration testing, Claude Code, AI-powered development, mentoring, on-call}
+}
+
+% Page layout
+\geometry{left=1.2cm, top=.4cm, right=1.2cm, bottom=.9cm, footskip=.4cm}
+\fontdir[fonts/]
+
+% Color / style
+
+% Emit ActualText so PDF text extraction yields ASCII hyphens (ATS keyword matching)
+\XeTeXgenerateactualtext=1
+
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Tighten vertical spacing to keep the CV to a single page
+\renewcommand{\acvSectionTopSkip}{1.5mm}
+\renewcommand{\acvSectionContentTopSkip}{0.9mm}
+
+% --- Header ---
+\name{Juan Manuel}{Young Hoyos}
+\position{Senior / Principal Software Developer \textbar{} TypeScript \& NestJS Cloud Services \textbar{} AWS \textbar{} Microservices}
+\address{Medellín, Colombia · Open to relocating to Montreal, QC · English B2+}
+\linkedin{juan-manuel-young-hoyos}
+\github{Youngermaster}
+\homepage{jmyounghoyos.com}
+\email{juanmanuel12.13jmyh81@gmail.com}
+\mobile{+57 1234567890}
+
+\begin{document}
+\makecvheader
+\makecvfooter{\today}{JUAN MANUEL YOUNG HOYOS | CURRICULUM VITAE}{\thepage}
+
+\input{sections/summary.tex}
+\input{sections/skills.tex}
+\input{sections/experience.tex}
+\input{sections/education.tex}
+
+\end{document}

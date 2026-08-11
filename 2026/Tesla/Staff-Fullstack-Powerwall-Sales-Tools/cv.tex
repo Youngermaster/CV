@@ -1,0 +1,51 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt, a4paper]{awesome-cv}
+\usepackage[hidelinks]{hyperref}
+
+% --- ATS / PDF metadata (populates the PDF Info dictionary so parsers like
+%     Ashby / Workday can auto-fill name, title and keywords from the file) ---
+\hypersetup{
+  pdftitle={Juan Manuel Young Hoyos — Staff Fullstack Software Engineer},
+  pdfauthor={Juan Manuel Young Hoyos},
+  pdfsubject={Staff Fullstack Software Engineer, Powerwall Sales Tools — Tesla},
+  pdfkeywords={React, TypeScript, GraphQL, full-stack, Rust, SaaS, B2B2C, sales tools, quoting, proposal generation, configurator, complex data models, time-series, financial calculations, data visualization, mobile-first, responsive UI, cloud infrastructure, Docker, Kubernetes, Argo, backend services, unit integration e2e testing, product sense, clean energy}
+}
+
+% Page layout
+\geometry{left=1.2cm, top=.4cm, right=1.2cm, bottom=.9cm, footskip=.4cm}
+\fontdir[fonts/]
+
+% Color / style
+
+% Emit ActualText so PDF text extraction yields ASCII hyphens (ATS keyword matching)
+\XeTeXgenerateactualtext=1
+
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Tighten vertical spacing to keep the CV to a single page
+\renewcommand{\acvSectionTopSkip}{1.5mm}
+\renewcommand{\acvSectionContentTopSkip}{0.9mm}
+
+% --- Header ---
+\name{Juan Manuel}{Young Hoyos}
+\position{Staff Full-Stack Software Engineer \textbar{} React \textbar{} TypeScript \textbar{} GraphQL \textbar{} Cloud}
+\address{Medellín, Colombia · Open to relocating to Palo Alto, CA · English B2+}
+\linkedin{juan-manuel-young-hoyos}
+\github{Youngermaster}
+\homepage{jmyounghoyos.com}
+\email{juanmanuel12.13jmyh81@gmail.com}
+\mobile{+57 1234567890}
+
+\begin{document}
+\makecvheader
+\makecvfooter{\today}{JUAN MANUEL YOUNG HOYOS | CURRICULUM VITAE}{\thepage}
+
+\input{sections/summary.tex}
+\input{sections/skills.tex}
+\input{sections/experience.tex}
+\input{sections/education.tex}
+
+\end{document}

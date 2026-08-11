@@ -1,0 +1,67 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt,a4paper]{awesome-cv}
+\usepackage[hidelinks]{hyperref}
+
+% --- ATS / PDF metadata ---
+\hypersetup{
+  pdftitle={Juan Manuel Young Hoyos — Cover Letter — Software Engineer, Frontend},
+  pdfauthor={Juan Manuel Young Hoyos},
+  pdfsubject={Cover Letter — Software Engineer, Frontend (Autonomous Air System V&V) — Helsing},
+  pdfkeywords={React, TypeScript, data visualization, real-time interfaces, simulation, design systems, frontend performance, REST, GraphQL, Rust, Helsing}
+}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Emit ActualText so PDF text extraction yields ASCII hyphens (ATS keyword matching)
+\XeTeXgenerateactualtext=1
+
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\definecolor{darktext}{HTML}{1A1A1A}
+\colorlet{text}{darktext}
+\renewcommand*{\lettertextstyle}{\fontsize{10pt}{1.45em}\bodyfontlight\upshape\color{darktext}}
+\renewcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{darktext}#1}}
+
+% --- Header info ---
+\name{Juan Manuel}{Young Hoyos}
+\position{Software Engineer, Frontend — React \& TypeScript · Data-Heavy \& Real-Time Interfaces}
+\address{Medellín, Colombia · Open to relocating to Berlin / Munich · English B2+}
+\mobile{+57 1234567890}
+\email{juanmanuel12.13jmyh81@gmail.com}
+\homepage{jmyounghoyos.com}
+\github{Youngermaster}
+\linkedin{juan-manuel-young-hoyos}
+
+% --- Letter meta ---
+\recipient
+  {Autonomous Air System V\&V — Hiring Team}
+  {Helsing}
+\letterdate{\today}
+\lettertitle{Application for Software Engineer — Frontend, Autonomous Air System V\&V}
+\letteropening{Dear Helsing Hiring Team,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Resume — Juan Manuel Young Hoyos.pdf}
+
+\begin{document}
+\makecvheader[R]
+\makelettertitle
+
+\begin{cvletter}
+
+I am applying for the \textbf{Frontend Software Engineer} role on the Autonomous Air System V\&V team. Building the interfaces through which engineers understand simulation output and AI behaviour --- where the UI is the instrument people use to decide whether a system is safe to fly --- is a more interesting problem than most frontend work, and the ethical weight of it is a reason to take it seriously rather than a reason to hesitate.
+
+My work is mostly \textbf{React} and \textbf{TypeScript} on interfaces that are dense with data. I build monitoring and admin \textbf{dashboards} over internal APIs, and as Technical Lead at \textbf{Okorum Technologies} I own both the React front end and the services behind it for a national-scale platform, delivered ahead of a hard deadline. I also stood up its \textbf{logs, traces and metrics} --- so I have been on the other side of this problem, making an opaque distributed system legible to the people operating it.
+
+\textbf{Frontend performance} is something I have measurably done rather than merely believe in: I cut a React/Angular bundle from \textbf{3.46 MB to ~886 KB}, and I have used Dynatrace to find and fix real user-facing regressions. On real-time and simulation data specifically, I designed a \textbf{geohash} spatial algorithm and ran \textbf{MQTT} device simulations in Python, feeding a client that displayed results in near real time, and I have worked with \textbf{Kafka} streaming.
+
+I am comfortable working in \textbf{unfamiliar backends} to unblock myself --- I have shipped Go, Python, Node.js and C++ (including a WebAssembly codebase). I have not written \textbf{Rust} in production, but I would be glad to learn it, and I would rather say that plainly than imply otherwise.
+
+The parts of your day-to-day I am most drawn to are the ones about people: reviewing colleagues' code and RFCs before pushing my own work forward, establishing a shared \textbf{component library}, mentoring, and writing things down for asynchronous readers. I have led engineering and QA teams and taught for over a decade. Thank you for your consideration.
+
+\end{cvletter}
+
+\makeletterclosing
+\end{document}

@@ -1,0 +1,67 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt,a4paper]{awesome-cv}
+\usepackage[hidelinks]{hyperref}
+
+% --- ATS / PDF metadata ---
+\hypersetup{
+  pdftitle={Juan Manuel Young Hoyos — Cover Letter — Senior / Principal Software Developer},
+  pdfauthor={Juan Manuel Young Hoyos},
+  pdfsubject={Cover Letter — Senior / Principal Software Developer — Autodesk AEC Data},
+  pdfkeywords={TypeScript, NestJS, React, Next.js, AWS, serverless, microservices, distributed systems, RESTful APIs, CI/CD, GitHub Actions, Claude Code, Autodesk, AEC}
+}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Emit ActualText so PDF text extraction yields ASCII hyphens (ATS keyword matching)
+\XeTeXgenerateactualtext=1
+
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\definecolor{darktext}{HTML}{1A1A1A}
+\colorlet{text}{darktext}
+\renewcommand*{\lettertextstyle}{\fontsize{10pt}{1.45em}\bodyfontlight\upshape\color{darktext}}
+\renewcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{darktext}#1}}
+
+% --- Header info ---
+\name{Juan Manuel}{Young Hoyos}
+\position{Senior / Principal Software Developer — TypeScript \& NestJS Cloud Services · AWS}
+\address{Medellín, Colombia · Open to relocating to Montreal, QC · English B2+}
+\mobile{+57 1234567890}
+\email{juanmanuel12.13jmyh81@gmail.com}
+\homepage{jmyounghoyos.com}
+\github{Youngermaster}
+\linkedin{juan-manuel-young-hoyos}
+
+% --- Letter meta ---
+\recipient
+  {AEC Data Validation — Hiring Team}
+  {Autodesk}
+\letterdate{\today}
+\lettertitle{Application for Senior / Principal Software Developer — AEC Data Validation}
+\letteropening{Dear Autodesk Hiring Team,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Resume — Juan Manuel Young Hoyos.pdf}
+
+\begin{document}
+\makecvheader[R]
+\makelettertitle
+
+\begin{cvletter}
+
+I am applying for the \textbf{Senior / Principal Software Developer} role on the AEC Data Validation team. Your stack reads like my daily one: \textbf{TypeScript} cloud services, \textbf{NestJS}, \textbf{React} and \textbf{Next.js}, microservices on AWS, and AI-powered development tools like \textbf{Claude Code}.
+
+As \textbf{Technical Lead at Okorum Technologies} I am hands-on every day building an enterprise-scale data platform: a \textbf{Turborepo monorepo of NestJS microservices} that validate and transform records through staged processing over \textbf{message queues}, producing standards-compliant output for exchange across an entire national ecosystem. Data validation at scale, with strict correctness requirements, is precisely what the team does --- mine simply happens to be healthcare records rather than building data.
+
+I care about the operational side as much as the code. I model \textbf{MongoDB} persistence and added a \textbf{Redis caching} layer to keep throughput high under sustained multi-tenant load; I engineered \textbf{fault tolerance and resumability} so in-flight work recovers gracefully when an upstream API degrades; and I built the \textbf{CI/CD pipeline on AWS with GitHub Actions} plus full \textbf{observability} for logs, traces and metrics. That combination --- reliable, secure, high-performance cloud services with automated deployment and real monitoring --- is what I would bring to your on-call rotation and delivery commitments.
+
+I also have the front-end half of your requirements: \textbf{React} and \textbf{Next.js} in TypeScript for Duluth Trading Company's e-commerce redesign, React Native for Wegmans (+30\% in-app engagement), and secure \textbf{JWT / OAuth 2.0} authentication in client-facing services.
+
+On your preferred qualification, I use \textbf{Claude Code} daily for implementation, refactoring, test generation and documentation --- and I review and validate everything it produces. AI raises my throughput; engineering judgement still decides what ships. Finally, I enjoy the mentoring part of a senior role: I have led engineering and QA teams and taught for over a decade. Thank you for your consideration.
+
+\end{cvletter}
+
+\makeletterclosing
+\end{document}

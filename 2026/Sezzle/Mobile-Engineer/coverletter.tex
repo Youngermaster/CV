@@ -1,0 +1,67 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt,a4paper]{awesome-cv}
+\usepackage[hidelinks]{hyperref}
+
+% --- ATS / PDF metadata ---
+\hypersetup{
+  pdftitle={Juan Manuel Young Hoyos — Cover Letter — Mobile Engineer},
+  pdfauthor={Juan Manuel Young Hoyos},
+  pdfsubject={Cover Letter — Mobile Engineer — Sezzle},
+  pdfkeywords={React Native, TypeScript, mobile, App Store, Google Play, automated tests, Claude, LLM, Golang, Python, fintech, payments, Sezzle}
+}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Emit ActualText so PDF text extraction yields ASCII hyphens (ATS keyword matching)
+\XeTeXgenerateactualtext=1
+
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\definecolor{darktext}{HTML}{1A1A1A}
+\colorlet{text}{darktext}
+\renewcommand*{\lettertextstyle}{\fontsize{10pt}{1.45em}\bodyfontlight\upshape\color{darktext}}
+\renewcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{darktext}#1}}
+
+% --- Header info ---
+\name{Juan Manuel}{Young Hoyos}
+\position{Mobile Engineer — React Native · TypeScript · AI-Assisted Development}
+\address{Medellín, Colombia · 100\% Remote · English B2+}
+\mobile{+57 1234567890}
+\email{juanmanuel12.13jmyh81@gmail.com}
+\homepage{jmyounghoyos.com}
+\github{Youngermaster}
+\linkedin{juan-manuel-young-hoyos}
+
+% --- Letter meta ---
+\recipient
+  {Engineering — Hiring Team}
+  {Sezzle}
+\letterdate{\today}
+\lettertitle{Application for Mobile Engineer (Colombia)}
+\letteropening{Dear Sezzle Hiring Team,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Resume — Juan Manuel Young Hoyos.pdf}
+
+\begin{document}
+\makecvheader[R]
+\makelettertitle
+
+\begin{cvletter}
+
+I am applying for the \textbf{Mobile Engineer} role at Sezzle. I am based in Medellín, I work fully remotely with US teams already, and I have spent the last few years doing precisely what this role describes: building features in a high-traffic, cross-platform \textbf{TypeScript React Native} app.
+
+At \textbf{Publicis Global Delivery} I built production React Native features for \textbf{Wegmans Food Markets}, one of the largest US grocery retailers. Modular TypeScript components with \textbf{Zustand} state management and Algolia search lifted \textbf{in-app engagement 30\%}; comprehensive \textbf{Jest unit tests} and cross-device verification with BrowserStack cut bug incidence \textbf{25\%}; and helping build a \textbf{CI/CD pipeline for Android APK generation} cut release-cycle time \textbf{50\%}. Through Grisú I have also designed and \textbf{launched} my own React Native apps end to end, so I know the release path, not just the feature work.
+
+Your requirement around \textbf{Claude and LLM tooling} is one I meet genuinely rather than aspirationally --- I use \textbf{Claude Code} daily to build, refactor, generate tests, research and document, and I review and validate everything it produces. Speed matters, but defects should not get sent down the line, so AI raises my throughput without lowering the bar.
+
+I also fit the wider stack. I have written backend services in \textbf{Golang} (Go Fiber) and \textbf{Python} (FastAPI), shipped \textbf{React} on the web, deployed with Docker on AWS and Azure, and used \textbf{GitLab} CI in my most recent role --- so I can contribute across a full-stack team rather than only inside the app. On fintech specifically: my team won \textbf{1st place among 52+ teams from 16 universities} at the CivicaPay hackathon with a working mobile payments prototype, which is where my interest in payments started.
+
+The parts of your culture description that resonate most are having relentlessly high standards and disagreeing then committing. I would rather raise a concern early and be wrong than stay quiet and be right later. Thank you for your consideration.
+
+\end{cvletter}
+
+\makeletterclosing
+\end{document}
