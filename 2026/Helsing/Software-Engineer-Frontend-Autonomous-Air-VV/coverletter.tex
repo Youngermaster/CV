@@ -8,7 +8,7 @@
   pdftitle={Juan Manuel Young Hoyos — Cover Letter — Software Engineer, Frontend},
   pdfauthor={Juan Manuel Young Hoyos},
   pdfsubject={Cover Letter — Software Engineer, Frontend (Autonomous Air System V&V) — Helsing},
-  pdfkeywords={React, TypeScript, data visualization, real-time interfaces, simulation, design systems, frontend performance, REST, GraphQL, Rust, Helsing}
+  pdfkeywords={React, TypeScript, Rust, SLAM, lidar, robotics, autonomous systems, Rerun, sensor data, simulation, data visualization, real-time interfaces, simulation, design systems, frontend performance, REST, GraphQL, Rust, Helsing}
 }
 
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -57,7 +57,7 @@ My work is mostly \textbf{React} and \textbf{TypeScript} on interfaces that are 
 
 \textbf{Frontend performance} is something I have measurably done rather than merely believe in: I cut a React/Angular bundle from \textbf{3.46 MB to ~886 KB}, and I have used Dynatrace to find and fix real user-facing regressions. On real-time and simulation data specifically, I designed a \textbf{geohash} spatial algorithm and ran \textbf{MQTT} device simulations in Python, feeding a client that displayed results in near real time, and I have worked with \textbf{Kafka} streaming.
 
-I am comfortable working in \textbf{unfamiliar backends} to unblock myself --- I have shipped Go, Python, Node.js and C++ (including a WebAssembly codebase). I have not written \textbf{Rust} in production, but I would be glad to learn it, and I would rather say that plainly than imply otherwise.
+Your backends are \textbf{Rust}, and that is where my own time goes outside work. I run \textbf{Project Olivaw} (github.com/Project-Olivaw), a set of robotics libraries in pure Rust: \textbf{olivaw-slam}, a 2D lidar \textbf{SLAM} implementation with correlative scan matching, keyframing and a log-odds occupancy grid, deliberately built without ROS2 or C++ dependencies; \textbf{olivaw-lidar}, an RPLIDAR driver with no C++ SDK or FFI that cross-compiles to aarch64 boards; and \textbf{olivaw-cli}, a developer tool that vendors editable Rust components into a project from a curated registry. I visualise live lidar scans with \textbf{Rerun} --- which is exactly the problem your team has, turning raw sensor and simulation output into something an engineer can read and act on. I have also shipped Go, Python, Node.js and C++ (including a WebAssembly codebase), so navigating an unfamiliar backend to unblock myself is normal for me.
 
 The parts of your day-to-day I am most drawn to are the ones about people: reviewing colleagues' code and RFCs before pushing my own work forward, establishing a shared \textbf{component library}, mentoring, and writing things down for asynchronous readers. I have led engineering and QA teams and taught for over a decade. Thank you for your consideration.
 
