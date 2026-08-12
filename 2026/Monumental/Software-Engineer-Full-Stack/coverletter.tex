@@ -8,10 +8,10 @@
   pdftitle={Juan Manuel Young Hoyos — Cover Letter — Software Engineer, Full-Stack},
   pdfauthor={Juan Manuel Young Hoyos},
   pdfsubject={Cover Letter — Software Engineer, Full-Stack — Monumental},
-  pdfkeywords={TypeScript, Rust, WebAssembly, robotics, telemetry, real-time, distributed systems, Linux, LLM agents, Claude Code, geometry, Monumental}
+  pdfkeywords={TypeScript, Rust, SLAM, lidar, pose estimation, serial, aarch64, Rerun, sensor, WebAssembly, robotics, telemetry, real-time, distributed systems, Linux, LLM agents, Claude Code, geometry, Monumental}
 }
 
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.25cm, top=.35cm, right=1.25cm, bottom=.5cm, footskip=.25cm}
 
 % Emit ActualText so PDF text extraction yields ASCII hyphens (ATS keyword matching)
 \XeTeXgenerateactualtext=1
@@ -22,7 +22,7 @@
 
 \definecolor{darktext}{HTML}{1A1A1A}
 \colorlet{text}{darktext}
-\renewcommand*{\lettertextstyle}{\fontsize{10pt}{1.45em}\bodyfontlight\upshape\color{darktext}}
+\renewcommand*{\lettertextstyle}{\fontsize{9.2pt}{1.20em}\bodyfontlight\upshape\color{darktext}}
 \renewcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{darktext}#1}}
 
 % --- Header info ---
@@ -43,7 +43,7 @@
 \lettertitle{Application for Software Engineer, Full-Stack}
 \letteropening{Dear Monumental Team,}
 \letterclosing{Sincerely,}
-\letterenclosure[Attached]{Resume — Juan Manuel Young Hoyos.pdf}
+
 
 \begin{document}
 \makecvheader[R]
@@ -53,7 +53,7 @@
 
 I am applying for the \textbf{Full-Stack Software Engineer} role at Monumental. Software that touches the physical world is the reason I am writing: I would rather debug why a robot behaves differently than its simulation than ship another SaaS screen. Building in Amsterdam, on-site, around a robot testing floor, is part of the appeal rather than a cost.
 
-Your stack is \textbf{TypeScript and Rust, much of it compiled to WebAssembly} so the UI shares control code with the robots. The closest thing I have done is refactoring and retrofitting a legacy \textbf{C++ WebAssembly} application, improving its code quality by \textbf{45\%} --- so I have worked inside a WASM codebase and understand what that shared-stack boundary costs and buys. I should say plainly that I have not written production \textbf{Rust}; I have shipped C++, Go, Python and TypeScript, I pick up languages quickly, and your posting says Rust is valuable but not required, so I will be straight with you rather than imply otherwise.
+Your stack is \textbf{TypeScript and Rust, much of it compiled to WebAssembly} so the UI shares control code with the robots. Both halves of that are already how I spend my time. I run \textbf{Project Olivaw} (github.com/Project-Olivaw), robotics libraries in pure \textbf{Rust}: \textbf{olivaw-slam}, a 2D lidar \textbf{SLAM} implementation with correlative scan matching, keyframing, a log-odds occupancy grid and pose estimation --- built deliberately without ROS2 or C++ dependencies --- and \textbf{olivaw-lidar}, a driver that talks to \textbf{RPLIDAR hardware over serial} with no C++ SDK or FFI and cross-compiles to \textbf{aarch64} boards, streaming live scans into \textbf{Rerun}. That last part is your first bullet: telemetry that lets you see what a robot is actually doing in real time. On the WebAssembly side, I refactored a legacy \textbf{C++ WASM} application (+\textbf{45\%} code quality), so I understand what that shared-stack boundary costs and buys.
 
 The problems you describe are ones I have versions of. \textbf{Telemetry so you can see what every unit is doing:} as Technical Lead at Okorum I stood up logs, traces and metrics across a distributed system and engineered \textbf{fault tolerance and resumability} into its queues, so in-flight work survives an unreliable external dependency that goes down without warning --- the software equivalent of a flaky link on a site. \textbf{Choosing the right abstractions:} I picked the core architecture for that platform and shipped it ahead of a hard government deadline. \textbf{Real-time and protocols:} I drove an \textbf{MQTT} architecture at ArcDesign with device \textbf{simulations in Python} before integrating the logic for near real-time behaviour, and I have built event-driven systems on Kafka and RabbitMQ.
 
@@ -61,7 +61,17 @@ On \textbf{LLM agents}: I run several in parallel --- \textbf{Claude Code} for b
 
 On foundations: I hold a B.S. in Computer Science and Engineering, I built a geohash-and-hashmap spatial algorithm for scalable geolocation, and I have done 3D engine work in Godot and Unity, so transforms and linear algebra are familiar ground. I am comfortable on Linux, SSH-ing into a machine to work out why something is not behaving.
 
-Finally, ownership: I have repeatedly been the person who drives a project start-to-finish without someone managing it, in chaotic conditions and against deadlines that did not move. Thank you for your consideration.
+Thank you for your consideration --- the system below is the clearest answer I can give on ownership.
+
+\lettersection{Most Complex System Owned End-to-End --- Rediat}
+
+\textbf{The problem.} Colombia's \textbf{Resolución 1888 de 2025} required every healthcare provider in the country to submit a \textbf{Resumen Digital de Atención en Salud (RDA)} --- a standardised digital summary of each clinical encounter --- as \textbf{HL7 FHIR R4}, by \textbf{15 April 2026}. The deadline was statutory. Providers had legacy systems, no FHIR experience, and a national platform that was slow, intermittently unavailable and thinly documented. We started in December 2025 with almost nothing.
+
+\textbf{What I owned.} I chose the architecture and built it from the ground up: a \textbf{Turborepo monorepo of TypeScript/NestJS microservices} streaming send → validate → convert → generate stages over \textbf{message queues} into standards-compliant FHIR resources. Because the upstream government API failed unpredictably, I engineered \textbf{fault tolerance and resumability} into the queues so in-flight submissions recover instead of being lost, added a \textbf{Redis} caching layer so the same clinical codes are not re-validated on every request, and modelled \textbf{MongoDB} persistence for \textbf{high-throughput} multi-provider load. I built \textbf{Python/FastAPI} services for provider analytics with long-running aggregation offloaded to background workers, the \textbf{React} front end, \textbf{CI/CD on AWS}, and the \textbf{observability} (Grafana, Loki) that showed us which stage was failing.
+
+I also owned the customer-facing half, which mattered as much as the code. I wrote the API documentation and ran long technical sessions with hospitals' health-IT leads so they could integrate and become compliant. We ended up with clearer documentation than the government's own, and I pushed the product to explain itself: actionable error suggestions, \textbf{automatic correction of the most common submission errors}, and messages in Spanish rather than English --- small things that removed a lot of friction for clinical staff.
+
+\textbf{Outcome.} We delivered \textbf{ahead of the mandate deadline}. Roughly \textbf{10\% of all production RDAs for national health events} now flow through Rediat. We found product-market fit within a few months of starting, and the team has been growing since.
 
 \end{cvletter}
 
